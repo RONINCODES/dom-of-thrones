@@ -164,9 +164,27 @@ function scene2() {
   })
 
   // Stage direction 2
-
+//Joffrey's head starting position
   frame(function() {
+    joffrey.style.transform = 'rotateZ(150deg)'
+    joffrey.style.left = '37%'
+    joffrey.style.top = '0px'
 
   })
+
+
+  //Joffrey's head middle position
+    frame(function() {
+      joffrey.style.left = '60%'
+      joffrey.style.top = '0px'
+      joffrey.style.transform = 'rotateZ(180deg)'
+    })
+
+  //Joffrey's head ending position
+    frame(function() {
+      joffrey.style.left = '100%'
+      joffrey.style.top = '70%'
+      joffrey.style.transform = 'rotateZ(200deg)'
+    })
 
 }
