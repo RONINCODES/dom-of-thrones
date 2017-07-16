@@ -57,8 +57,72 @@ function scene2() {
   nedContainer.style.border = 'none'
   nedContainer.style.background = 'none'
 
+  //giving ned a Sword
+  sword = document.querySelector('#sword')
+  stage.append(sword)
+  sword.style.position = 'absolute'
+  sword.style.top = '77%'
+  sword.style.left ='31.5%'
+  sword.style.height = '5%'
 
-  // Character 2
+  //gotta flig the sword arround to point at joffrey
+  sword.style.transform = 'rotateY(150deg)'
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  // Joffrey
+  //setting up the joffrey container
+  joffreyContainer = document.createElement('div')
+  stage.append(joffreyContainer)
+
+  //setting up the position and size of  joffrey container (can't be seen yet)
+  joffreyContainer.style.position = 'absolute'
+  joffreyContainer.style.width = '10%'
+  joffreyContainer.style.height = '24%'
+  joffreyContainer.style.top = '50%'
+  joffreyContainer.style.left = '15%'
+
+  //colouring in the div for joffreyContainer
+  joffreyContainer.style.border = '2px solid red'
+  joffreyContainer.style.background = 'yellow'
+
+  //moving joffrey's head in the div
+  joffrey = document.querySelector('#joffrey')
+  joffreyContainer.append(joffrey)
+
+  //putting some armour on joffrey
+  king = document.querySelector('#king')
+  joffreyContainer.append(king)
+
+  //add border to joffreys head and armour for better viewing
+  joffrey.style.border = '2px solid blue'
+  king.style.border = '2px solid green'
+
+  //sizing joffreys head
+  joffrey.style.width = '63.5%'
+  joffrey.style.left = '37%'
+
+  //bringing joffreys head and armour together
+  joffrey.style.position = 'absolute'
+  joffrey.style.top = 0
+  king.style.position = 'absolute'
+  king.style.bottom = 0
+  joffreyContainer.style.height = '37%'
+
+  //postioning joffrey beside Ned
+  joffreyContainer.style.top = '57%'
+  joffreyContainer.style.left = '45%'
+
+
+  //remove joffreys background
+  joffrey.style.border = 'none'
+  king.style.border = 'none'
+  joffreyContainer.style.border = 'none'
+  joffreyContainer.style.background = 'none'
+
+
+
+
+
 
   // Setup Props
 
