@@ -65,7 +65,7 @@ function scene2() {
   sword.style.left ='31.5%'
   sword.style.height = '5%'
 
-  //gotta flig the sword arround to point at joffrey
+  //gotta flip the sword arround to point at joffrey
   sword.style.transform = 'rotateY(150deg)'
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -133,9 +133,34 @@ function scene2() {
   // Action!
 
   // Stage direction 1
-
+  //sword starting position (in neds hands)
   frame(function() {
+    sword.style.top = '77%'
+    sword.style.left ='31.5%'
+  })
 
+  //sword 2nd frame position
+  frame(function() {
+    sword.style.top = '74%'
+    sword.style.left ='36%'
+  })
+
+  //sword middle position (flying towards joffrey's neck)
+  frame(function() {
+    sword.style.top = '71%'
+    sword.style.left = '40%'
+  })
+
+  //sword 1 frame passed middle position (flying towards joffrey's neck)
+  frame(function() {
+    sword.style.top = '68%'
+    sword.style.left = '42%'
+  })
+
+//sword ending position (at joffreys neck)
+  frame(function() {
+    sword.style.top = '65%'
+    sword.style.left ='45%'
   })
 
   // Stage direction 2
